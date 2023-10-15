@@ -1,2 +1,10 @@
-String str1 = "Hello Hello";
-println str1;
+pipeline {
+  agent any
+  stages {
+    stage ('Stage 1') {
+      steps {
+        echo "hello hello hello"
+      }
+    }
+  }
+}
