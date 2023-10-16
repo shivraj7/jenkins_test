@@ -1,4 +1,4 @@
-Boolean bool = false
+Boolean bool = true
 
 pipeline {
   agent any
