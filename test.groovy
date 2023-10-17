@@ -1,4 +1,5 @@
 Boolean bool = true
+String jobName 
 
 pipeline {
   agent any
@@ -6,7 +7,7 @@ pipeline {
     stage ('Stage 1') {
       steps {
         echo "hello1 "
-        String jobName = System.getenv('JOB_NAME')
+        jobName = System.getenv('JOB_NAME')
         echo $jobNAme
       }
     }
