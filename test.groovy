@@ -9,6 +9,7 @@ pipeline {
           echo "hello1 "
           echo  "${env.JOB_NAME}"
           echo "$jobName"
+          echo $JOB_NAME
       }
     }
     stage ('Stage 2') {
