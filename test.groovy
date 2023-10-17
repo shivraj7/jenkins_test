@@ -6,10 +6,8 @@ pipeline {
   stages {
     stage ('Stage 1') {
       steps {
-        script {
           echo "hello1 "
-          echo $jobNAme
-        }
+          echo $jobName
       }
     }
     stage ('Stage 2') {
