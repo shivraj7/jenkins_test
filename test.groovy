@@ -24,8 +24,10 @@ pipeline {
   }
   post {
     always {
-      if (bool == true) {
-        echo "run always"
+      script {
+        if (bool == true) {
+          echo "run always"
+        }
       }
     }
     success {
