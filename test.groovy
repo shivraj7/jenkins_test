@@ -6,9 +6,11 @@ pipeline {
   stages {
     stage ('Stage 1') {
       steps {
-        echo "hello1 "
-        jobName = System.getenv('JOB_NAME')
-        echo $jobNAme
+        script {
+          echo "hello1 "
+          jobName = System.getenv('JOB_NAME')
+          echo $jobNAme
+        }
       }
     }
     stage ('Stage 2') {
