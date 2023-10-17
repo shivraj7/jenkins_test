@@ -7,7 +7,7 @@ pipeline {
     stage ('Stage 1') {
       steps {
           echo "hello1 "
-          echo  ${env.JOB_NAME}
+          echo  "${env.JOB_NAME}"
       }
     }
     stage ('Stage 2') {
