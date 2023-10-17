@@ -1,4 +1,5 @@
 Boolean bool = true
+def jobName = this.binding.jenkinsProject.name
 
 pipeline {
   agent any
@@ -6,6 +7,7 @@ pipeline {
     stage ('Stage 1') {
       steps {
         echo "hello1 "
+        echo $jobNmae
       }
     }
     stage ('Stage 2') {
