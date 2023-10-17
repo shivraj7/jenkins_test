@@ -1,5 +1,5 @@
 Boolean bool = true
-String jobName = System.getenv('JOB_NAME')
+String jobName = ${env.JOB_NAME}
 
 pipeline {
   agent any
