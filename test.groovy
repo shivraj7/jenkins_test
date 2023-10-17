@@ -1,5 +1,5 @@
 Boolean bool = true
-String jobName = ${env.JOB_NAME}
+//String jobName = ${env.JOB_NAME}
 
 pipeline {
   agent any
@@ -7,7 +7,7 @@ pipeline {
     stage ('Stage 1') {
       steps {
           echo "hello1 "
-          echo $jobName
+          echo  ${env.JOB_NAME}
       }
     }
     stage ('Stage 2') {
