@@ -1,5 +1,5 @@
 Boolean bool = true
-String jobName 
+String jobName = System.getenv('JOB_NAME')
 
 pipeline {
   agent any
@@ -8,7 +8,6 @@ pipeline {
       steps {
         script {
           echo "hello1 "
-          jobName = System.getenv('JOB_NAME')
           echo $jobNAme
         }
       }
