@@ -29,6 +29,7 @@ pipeline {
           echo "run always"
         }
       }
+      echo "run always 1"
     }
     success {
       echo "run if success"
