@@ -29,7 +29,7 @@ pipeline {
     success {
       echo "run if success"
     }
-    failuer {
+    failure {
       echo "run if fail"
     }
   }
